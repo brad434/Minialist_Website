@@ -8,15 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/0927c82d17.js" crossorigin="anonymous"></script>
     <title>Minimalist Website</title>
 </head>
 <body>
     <section class="front-page">
-        <img class="hero" src="./assets/hero.png" alt="meditation">
+        <img  class="hero" src="./photos/pexels-antony-trivet-12868533.jpg" alt="">
+        <!-- <video muted loop class="hero" src="./videos/IMG_4191.MOV"></video> -->
+        <!-- <img class="hero" src="./assets/hero.png"> -->
         <nav>
             <div class="logo">
-                <img src="./assets/logo.svg" alt="mind & body">
-                <h1>Mind & Body</h1>
+                <img src="./photos/11167558_2be48b33_90x90.jpg" alt="mind & body">
+                <h1>Miss_Chris_Stylez</h1>
             </div>
             <div class="links">
                 <a href="#">Pricing</a>
@@ -34,46 +37,104 @@
         </nav>
 
         <div class="selling-point">
-            <h2>Let your mind breathe.</h2>
-            <h3>Get unlimited access to yoga, pilates, and meditation classes that fit the way you feel.</h3>
+            <h2>Welcome</h2>
+            <h3>Our Brooklyn hair salon specializes in hair growth, hair strength, vibrant color, and custom designs.</h3>
             
             <div class="ctas">
-                <button class="cta-secondary">Satisfied Clients</button>
-                <button class="cta-main"><a href="https://koalendar.com/e/miss_chris_stylez-llc">Book Now!</a></button>
+                <button class="cta-secondary">
+                    <a href="#clients">Satisfied Clients</a>
+                </button>
+
+                <button class="cta-main">
+                    <a href="https://koalendar.com/e/miss_chris_stylez-llc">Book Now!</a>
+                </button>
             </div>
         </div>
     </section>
 
-    <section class="classes">
+    <section class="classes" id="clients">
         <div class="classes-desc">
-            <h2>Classes tailored for you</h2>
-            <h3>Its time to heal your mind and body</h3>
+            <h2>Our Services Tailored For You</h2>
+            <h3>We have a range of different styles for you to choose from</h3>
+        </div>
 
             <div class="videos">
                 <div class="pilates">
-                    <h3>Pilates</h3>
-                    <video muted loop class="video" src="./assets/pilates.mp4"></video>
+                    <h3>Book Now</h3>
+                    <video muted loop class="video" src="./videos/IMG_4185.MOV"></video>
                 </div>
 
                 <div class="yoga">
                     <h3>Yoga</h3>
-                    <video muted loop class="video" src="./assets/yoga.mp4"></video>
+                    <video muted loop class="video" src="./videos/IMG_4186.MOV"></video>
                 </div>
                 <div class="meditation">
                     <h3>Meditation</h3>
-                    <video muted loop class="video" src="./assets/meditation.mp4"></video>
+                    <video muted loop class="video" src="./videos/IMG_4190.MOV"></video>
                 </div>
             </div>
-        </div>
     </section>
 
     <section class="about">
         <div class="our-story">
-            <h2>Our Story...</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et reiciendis deserunt atque, nihil quibusdam omnis sit libero, numquam non minima repudiandae id magnam alias beatae.</p>
+            <h2>Pricing</h2>
+            <div class="table_container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>STYLE</th>
+                            <th>PRICE</th>
+                            <th>BOOK NOW</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td data-label="STYLE">Cut</td>
+                            <td data-label="PRICE">$165</td>                        
+                            <td data-label="BOOK NOW"><a href="#" class="btn">Book!</a></td>                        
+                        </tr>
+                        <tr>
+                            <td data-label="STYLE">Styling</td>
+                            <td data-label="PRICE">$165</td>
+                            <td data-label="BOOK NOW"><a href="#" class="btn">Book!</a></td> 
+                        </tr>
+                        <tr>
+                            <td data-label="STYLE">Color</td>
+                            <td data-label="PRICE">$165</td>
+                            <td data-label="BOOK NOW"><a href="#" class="btn">Book!</a></td> 
+                        </tr>
+                        <tr>
+                            <td data-label="STYLE">MicroFibers</td>
+                            <td data-label="PRICE">$165</td>
+                            <td data-label="BOOK NOW"><a href="#" class="btn">Book!</a></td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+            <p>If you have a preferred style you want. Please provide photos of the respective hair design.<br> <br>Once received, a representative will contact you with custom pricing. <br>
+            <br>All custom designs are welcomed!</p>
         </div>
-        <img src="./assets/our-story.png" alt="our-story">
+        <img src="./photos/photo_2022-12-20_02-15-33.jpg" alt="our-story">
     </section>
+
+    <footer>
+        <div class="footer_content">
+            <h3>MissChrisStylez</h3>
+            <p>We aim to please. Thank You for your interest. Please book us today for the BEST deals!</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer_bottom">
+            <p>copyright &copy; 2022 MissChrisStylez. Designed by <span>Bradley C.</span></p>
+        </div>
+    </footer>
 
     <!-- This JS was founded on https://cdnjs.com/libraries/gsap  which will help do the animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
