@@ -1,11 +1,12 @@
 const burger = document.querySelector("nav svg"); //see if you want to put an ID instead of nav svg
 
 burger.addEventListener('click', () => {
+    console.log("check",burger.classList.contains("active"))
     if(burger.classList.contains("active")){
         gsap.to(".links", {x:"100%"}); //goes off screen
         gsap.to(".line", { stroke: "white" }); // the stroke is the attr in the element for the svg 
         gsap.set("body", {overflow: "auto"});
-        gsap.set("body", {overflowX: "hidden"});
+        gsap.set("body", {overflow: "hidden"});
     }else{
         gsap.to(".links", {x:"0%"}) // sidebar comes into view
         gsap.to(".line", { stroke: "black" });
